@@ -20,4 +20,4 @@ type cases = [
 ];
 
 // ============= Your Code Here =============
-type Length<T extends readonly any[]> = T['length'];
+export type Length<T extends readonly any[]> = T['length'];
