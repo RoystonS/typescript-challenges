@@ -17,6 +17,6 @@ type error = MyAwaited<number>;
 // ============= Your Code Here =============
 type MyAwaited<T extends Promise<any>> = T extends Promise<infer R>
   ? R extends Promise<any>
-    ? Awaited<R>
+    ? MyAwaited<R>
     : R
   : T;
